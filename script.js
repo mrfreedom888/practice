@@ -66,11 +66,100 @@
 //     console.log(i);
 // }
 
-const myArray = ['first', 'second', 'third'];
-for(let i = 0; i < myArray.length; i++){
-    console.log(myArray[i]);
+// const myArray = ['first', 'second', 'third'];
+// for(let i = 0; i < myArray.length; i++){
+//     console.log(myArray[i]);
+// }
+
+// myArray.forEach((element, index) => {
+//     console.log(element, index);
+// })
+
+// let i = 4;
+
+// do{
+//     console.log(i);
+//     i++
+// } while (i < 5)
+
+// const myObj = {
+//     x: 10,
+//     y: true,
+//     z: 'abc'
+// }
+
+// for (const key in myObj){
+//     console.log(myObj[key])
+// }
+
+// Object.keys(myObj).forEach(key => {
+//     console.log(key, myObj[key])
+// })
+
+// Object.values(myObj).forEach( value => {
+//     console.log(value);
+// })
+
+// const myArray = [true, 10, 'abc', null];
+
+// for (const key in myArray) {
+//     console.log(myArray[key])
+// };
+
+// myArray.forEach(key => {
+//     console.log(key)
+// })
+
+// const myString = 'hey';
+
+// for (const letter of myString) {
+//     console.log(letter)
+// }
+
+// const myArray = [true, 10, 'abc', null];
+
+// for (const element of myArray) {
+//     console.log(element);
+// }
+
+class Comment {
+    constructor(text){
+        this.text = text;
+        this.votesQty = 0
+    }
+    upvote(){
+        this.votesQty += 1;
+    }
 }
 
-myArray.forEach((element, index) => {
-    console.log(element, index);
-})
+const firstComment = new Comment ('First comment');
+const secondComment = new Comment ('Second comment');
+const thirdComment = new Comment ('Third comment');
+
+// console.log(firstComment instanceof Object || Comment);
+
+firstComment.upvote();
+console.log(firstComment.votesQty);
+
+firstComment.upvote();
+console.log(firstComment.votesQty);
+
+firstComment.upvote();
+console.log(firstComment.votesQty);
+
+firstComment.upvote();
+console.log(firstComment.votesQty);
+
+secondComment.upvote();
+console.log(secondComment.votesQty);
+
+
+secondComment.upvote();
+console.log(secondComment.votesQty);
+
+
+secondComment.upvote();
+console.log(secondComment.votesQty);
+
+thirdComment.upvote();
+console.log(thirdComment.votesQty);
